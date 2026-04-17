@@ -6,18 +6,18 @@ A responsive React application that helps crypto investors visualize and optimiz
 
 ## 📸 Screenshots
 
-
-###  Dark Mode
+### Dashboard (Dark Mode)
 ![Dark Mode](./public/screenshots/Dark-Mode.png)
 
-###  Light Mode
+### Dashboard (Light Mode)
 ![Light Mode](./public/screenshots/Light-Mode.png)
 
-###  Mobile View
+### Mobile View
 ![Mobile View](./public/screenshots/MobileView.png)
 
-###  Popup / Interaction
+### How It Works Popup
 ![Popup](./public/screenshots/PopUp.png)
+
 
 ---
 
