@@ -4,6 +4,11 @@ A responsive React application that helps crypto investors visualize and optimiz
 
 ---
 
+## 🔗 Live Demo  
+[View Live App](https://tax-loss-harvesting-theta.vercel.app/)
+
+---
+
 ## 📸 Screenshots
 
 ### Dashboard (Dark Mode)
