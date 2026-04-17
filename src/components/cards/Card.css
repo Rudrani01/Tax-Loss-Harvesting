@@ -1,0 +1,139 @@
+.card {
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  min-width: 0;
+}
+
+.pre-card {
+  background: rgba(23, 26, 38, 1);
+  border: 1px solid #1e293b;
+  color: #fff;
+}
+
+.after-card {
+  background: linear-gradient(135deg, #3C9AFF 2.5%, #0066FE 100.05%);
+  color: #fff;
+}
+
+.skeleton {
+  min-height: 180px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.gains-table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gains-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  font-size: 13px;
+  align-items: center;
+}
+
+.gains-header {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.gains-header span:not(:first-child) {
+  text-align: right;
+}
+
+.gains-row span:not(:first-child) {
+  text-align: right;
+}
+
+.gains-row span:first-child {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.net-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 8px;
+  margin-top: 2px;
+}
+
+.net-row span:first-child {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+.profit-val { color: #fff; }
+.loss-val { color: #fff; }
+.loss-val-blue { color: #fff; }
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.footer-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-amount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.save-banner {
+  margin-top: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.save-banner strong { font-weight: 700; }
+
+/* ── Light theme overrides ── */
+
+.pre-card.light {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(25, 40, 57, 0.12);
+    color: #000;
+}
+
+.pre-card.light .card-title { color: #000; }
+.pre-card.light .gains-header { color: rgba(0, 0, 0, 0.45); }
+.pre-card.light .gains-row span:first-child { color: rgba(0, 0, 0, 0.6); }
+.pre-card.light .net-row span:first-child { color: rgba(0, 0, 0, 0.75); }
+.pre-card.light .net-row { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+.pre-card.light .profit-val { color: #000; }
+.pre-card.light .loss-val { color: #000; }
+.pre-card.light .card-footer { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+.pre-card.light .footer-label { color: rgba(0, 0, 0, 0.6); }
+.pre-card.light .footer-amount { color: #000; }
+
+@media (max-width: 640px) {
+  .card { padding: 16px; }
+  .gains-row { font-size: 12px; }
+  .footer-amount { font-size: 18px; }
+}

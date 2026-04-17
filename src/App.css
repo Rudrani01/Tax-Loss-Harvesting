@@ -1,0 +1,19 @@
+/* Theme styles */
+
+.dark {
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
+
+.light {
+  background: #f8fafc;
+  color: black;
+  min-height: 100vh;
+}
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
